@@ -13,7 +13,8 @@ petalinux commands
  petalinux-build -c rootfs
  petalinux-build -c kernel 
 
-
+# create Module
+petalnux-create -t modules -n simmod --enable
 
 # Create App
 ```petalinux-create -t apps --template c --name hellosim```
