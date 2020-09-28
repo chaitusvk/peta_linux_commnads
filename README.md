@@ -9,9 +9,10 @@ petalinux commands
 ```petalinux-config --get-hw-description=petalinux-config --get-hw-description=/home/chaitusvk/Documents/final_testing/petalinux_int_base/petalinux_int_base.sdk/design_1_wrapper_hw_platform_0 ```
 
 # Build
-``` petalinux-build
-    petalinux-build -c rootfs
-    petalinux-build -c kernel ```
+ petalinux-build
+ petalinux-build -c rootfs
+ petalinux-build -c kernel 
+
 
 
 # Create App
