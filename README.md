@@ -9,9 +9,9 @@ petalinux commands
 ```petalinux-config --get-hw-description=petalinux-config --get-hw-description=/home/chaitusvk/Documents/final_testing/petalinux_int_base/petalinux_int_base.sdk/design_1_wrapper_hw_platform_0 ```
 
 # Build
- petalinux-build
- petalinux-build -c rootfs
- petalinux-build -c kernel 
+ * petalinux-build
+ * petalinux-build -c rootfs
+ * petalinux-build -c kernel 
 
 # create Module
 petalnux-create -t modules -n simmod --enable
@@ -21,3 +21,11 @@ petalnux-create -t modules -n simmod --enable
 
 # Package
 ``` petalinux-package --boot --fsbl images/linux/zynq_fsbl.elf --fpga project-spec/hw-description/design_1_wrapper.bit --uboot --force ```
+
+
+# Static Ip 
+* 1.petalinux-config
+* 2.Subsysem Auto Hardware Setting
+* 3.Ethernet Setting
+* 4.Disable ipaddress automatically with "N"
+* 5.Set Ip address and netmask 
